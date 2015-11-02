@@ -19,6 +19,16 @@ body {
     margin: 0;
     z-index: 100; }
 
+.span60 {
+  font-size: 60px;
+  line-height: 60px; }
+
+.main_h1 {
+  font-size: 43px;
+  line-height: 44px;
+  font-weight: bold;
+  letter-spacing: 1.5; }
+
 .title_h1 {
   font-size: 45px;
   line-height: 48px;
@@ -46,6 +56,15 @@ body {
 
 .bold {
   font-weight: bold; }
+
+.unbold {
+  font-weight: 400; }
+
+.spacing {
+  letter-spacing: 2; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 p {
   margin: 0; }
@@ -101,10 +120,14 @@ p {
   /* ————————Exhibitions———————— */
   /* ————————Events———————— */
   /* ————————Vists———————— */ }
-  #main_container #main01 {
+  #main_container .main01 {
     width: 100%;
     float: left;
-    margin: 0; }
+    height: auto;
+    margin: 0;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    display: flex; }
   #main_container img {
     width: 100%; }
   #main_container a:link {
@@ -160,6 +183,11 @@ p {
     display: flex;
     float: left;
     margin-bottom: 3%; }
+  #main_container .grid_full {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 5%; }
   #main_container .grid1 {
     width: 11%;
     height: auto;
@@ -173,8 +201,7 @@ p {
     height: auto;
     margin-right: 1%;
     /*background: rgba(0,0,0,0.1);*/
-    vertical-align: bottom;
-    position: relative; }
+    vertical-align: bottom; }
   #main_container .grid3 {
     width: 35%;
     height: auto;
@@ -206,7 +233,6 @@ p {
     width: 71%;
     height: auto;
     margin-right: 1%;
-    background: rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
     display: flex; }
   #main_container .grid7 {
@@ -286,5 +312,100 @@ p {
 
 #main_container img {
   width: 100%; }
+
+@media only screen and (max-width: 1800px) {
+  .span60 {
+    font-size: 60px;
+    line-height: 60px; }
+
+  .main_h1 {
+    font-size: 35px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: 1.5; }
+
+  .title_h1 {
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: bold;
+    letter-spacing: 1.4; }
+
+  .title_h2 {
+    font-size: 34px;
+    line-height: 39px;
+    font-weight: bold; }
+
+  .date {
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 2; }
+
+  .body_text {
+    font-size: 15px;
+    letter-spacing: 0.4;
+    line-height: 24px; }
+
+  .description {
+    font-size: 11px;
+    letter-spacing: 1; }
+
+  .bold {
+    font-weight: bold; }
+
+  .unbold {
+    font-weight: 400; }
+
+  .spacing {
+    letter-spacing: 2; }
+
+  .uppercase {
+    text-transform: uppercase; } }
+@media only screen and (max-width: 1550px) {
+  .span60 {
+    font-size: 60px;
+    line-height: 60px; }
+
+  .main_h1 {
+    font-size: 30px;
+    line-height: 31px;
+    font-weight: bold;
+    letter-spacing: 1.5; }
+
+  .title_h1 {
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: bold;
+    letter-spacing: 1.4; }
+
+  .title_h2 {
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: bold; }
+
+  .date {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2; }
+
+  .body_text {
+    font-size: 15px;
+    letter-spacing: 0.4;
+    line-height: 24px; }
+
+  .description {
+    font-size: 11px;
+    letter-spacing: 1; }
+
+  .bold {
+    font-weight: bold; }
+
+  .unbold {
+    font-weight: 400; }
+
+  .spacing {
+    letter-spacing: 2; }
+
+  .uppercase {
+    text-transform: uppercase; } }
 
 /*# sourceMappingURL=style.css.map */
